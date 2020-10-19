@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace Open_Lab_04._02
 {
@@ -6,7 +8,12 @@ namespace Open_Lab_04._02
     {
         public string DoubleChar(string original)
         {
-            throw new NotImplementedException();
+            string str = "";
+            foreach(var o in original)
+            {
+                str = str + o + o;
+            }
+            return str;
         }
     }
 }
